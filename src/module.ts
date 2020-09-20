@@ -10,7 +10,7 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOption
       description: 'Description of panel option',
       defaultValue: 'Default value of text input option',
     })
-    
+
     .addBooleanSwitch({
       path: 'showSeriesCount',
       name: 'Show series counter',
@@ -46,17 +46,17 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOption
         options: [
           {
             value: 'red',
-            label: 'Red'
+            label: 'Red',
           },
           {
             value: 'green',
-            label: 'Green'
+            label: 'Green',
           },
           {
             value: 'blue',
-            label: 'Blue'
+            label: 'Blue',
           },
         ],
-      }
+      },
     });
 });

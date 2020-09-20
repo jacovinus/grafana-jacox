@@ -1,5 +1,5 @@
 type SeriesSize = 'sm' | 'md' | 'lg';
-type  CircleColor = 'red' | 'green' | 'blue';
+type CircleColor = 'red' | 'green' | 'blue';
 export interface SimpleOptions {
   text: string;
   showSeriesCount: boolean;

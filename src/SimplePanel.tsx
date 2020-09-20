@@ -10,20 +10,20 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height }) =
   const theme = useTheme();
   const styles = getStyles();
   let color: string;
-  switch(options.color) {
+  switch (options.color) {
     case 'red':
       color = theme.palette.redBase;
       break;
-      case 'green':
-        color = theme.palette.greenBase;
-        break;
-        case 'blue':
-          color = theme.palette.blue95;
-          break;
+    case 'green':
+      color = theme.palette.greenBase;
+      break;
+    case 'blue':
+      color = theme.palette.blue95;
+      break;
   }
   const radii = data.series
-  .map(series => series.fields.find(field=> field.type === 'number'))
-  .map(field => field?.values.get(field.values.length -1));
+    .map(series => series.fields.find(field => field.type === 'number'))
+    .map(field => field?.values.get(field.values.length - 1));
   return (
     <div
       className={cx(
@@ -43,10 +43,10 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height }) =
         viewBox={`0 -${height / 2} ${width} ${height}`}
       >
         <g fill={color}>
-        {radii.map((radius, index) =>{
-          const step = width / radii.length;
-          return <circle r={radius} transform={`translate(${index * step + step /2},0)`}/>;
-        })}
+          {radii.map((radius, index) => {
+            const step = width / radii.length;
+            return <circle r={radius} transform={`translate(${index * step + step / 2},0)`} />;
+          })}
         </g>
       </svg>
 
@@ -60,8 +60,7 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height }) =
             Series: {data.series.length}
           </div>
         )}
-     
-       
+
         <div>Text option value: {options.text}</div>
       </div>
     </div>
