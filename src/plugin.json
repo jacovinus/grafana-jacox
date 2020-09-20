@@ -1,0 +1,36 @@
+{
+  "type": "panel",
+  "name": "jacox",
+  "id": "jacox-sa-jacox",
+  "info": {
+    "description": "test panel plugin",
+    "author": {
+      "name": "Joel Guerra",
+      "url": "jacox.xyz"
+    },
+    "keywords": [
+      "jacox"
+    ],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://github.com/grafana/simple-react-panel"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/grafana/simple-react-panel/blob/master/LICENSE"
+      }
+    ],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaVersion": "7.0.x",
+    "plugins": []
+  }
+}
